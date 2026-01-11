@@ -32,14 +32,6 @@ function M.apply(colors)
   hi('Normal', { fg = m, bg = bm, attr = 'NONE' })
   hi('Visual', { fg = vis_fg, bg = vis_bg, attr = 'NONE' })
   
-  -- 5. DASHED UI ELEMENTS (Resetting links first)
-  vim.cmd('hi! link WinBar NONE')
-  vim.cmd('hi! link WinBarNC NONE')
-  vim.cmd('hi! link TabLine NONE')
-  vim.cmd('hi! link TabLineFill NONE')
-  vim.cmd('hi! link TabLineSel NONE')
-  vim.cmd('hi! link PmenuSel NONE')
-
   vim.api.nvim_set_hl(0, 'TabKeyLetter', { underdashed = true, })
   vim.api.nvim_set_hl(0, 'TabKeyLetter2', { underdashed = true, })
 
@@ -54,7 +46,7 @@ function M.apply(colors)
 
   -- Search
   hi('CurSearch', { bg = m, fg = vis_fg, attr = 'underdashed' })
-  hi('IncSearch', { bg = m, fg = bm, attr = 'underdashed' })
+  hi('IncSearch', { bg = vis_bg, fg = vis_fg, attr = 'underdashed' })
   hi('Search',    { bg = m, fg = vis_fg })
 
   -- 6. REVERSED UI ELEMENTS (Popups & Menus)
