@@ -50,8 +50,9 @@ hi('TabLineSel', { fg = mcolor, bg = bmcolor, attr = 'NONE' })
 
 -- 2. Explicitly define all common SYNTAX groups to be mcolor and NOT bold
 --hi('Comment', { fg = bmcomment, attr = 'underdotted' })
-hi('Comment', { fg = 160 })
+--hi('Comment', { fg = 160 })
 --hi('Comment', { fg = 196 })
+hi('Comment', { fg = "darkred" })
 hi('Constant', { fg = mcolor, attr = 'NONE' })
 hi('Statement', { fg = mcolor, attr = 'NONE' })
 hi('Identifier', { fg = mcolor, attr = 'NONE' })
