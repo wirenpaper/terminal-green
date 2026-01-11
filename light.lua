@@ -18,7 +18,7 @@ vim.g.colors_name = 'terminal-green'
 
 -- day
 bmcolor = "223"
-mcolor = "NONE"
+mcolor = "0"
 local function hi(group, opts)
   local cmd = 'highlight ' .. group
   if opts.fg then cmd = cmd .. ' ctermfg=' .. opts.fg end

@@ -16,7 +16,7 @@ vim.opt.termguicolors = false
 -- Set the colorscheme name
 vim.g.colors_name = 'terminal-green'
 
---mcolor = "darkgreen"
+--bmcolor = "NONE"
 bmcolor = "NONE"
 mcolor = "214"
 --bmcomment = 'grey'
@@ -35,14 +35,13 @@ end
 
 -- 1. Define the CORE styles for UI and special elements
 hi('Normal', { fg = mcolor, bg = bmcolor, attr = 'NONE' })
-hi('Visual', { fg = bmcolor, bg = mcolor, attr = 'NONE' })
+hi('Visual', { fg = "0" , bg = mcolor, attr = 'NONE' })
 hi('PmenuSel', { attr = 'underdashed' })
 
 -- The current match under cursor - add underline only
-hi('CurSearch', { bg = mcolor, fg = bmcolor, attr = 'underdashed' })
--- IncSearch is for incremental search (while typing)
+hi('CurSearch', { bg = mcolor, fg = "0" , attr = 'underdashed' })
 hi('IncSearch', { bg = mcolor, fg = bmcolor, attr = 'underdashed' })
-hi('Search', { bg = mcolor, fg = bmcolor })
+hi('Search', { bg = mcolor, fg = "0" })
 
 -- Note: These are intentionally 'green'. Change to mcolor if you want
 -- absolutely no variation anywhere.
