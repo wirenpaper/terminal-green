@@ -17,7 +17,7 @@ vim.opt.termguicolors = false
 vim.g.colors_name = 'terminal-green'
 
 --mcolor = "darkgreen"
-bmcolor = "black"
+bmcolor = "NONE"
 mcolor = "214"
 --bmcomment = 'grey'
 -- Helper function to set highlights
@@ -51,7 +51,8 @@ hi('TabLineSel', { fg = mcolor, bg = bmcolor, attr = 'NONE' })
 
 -- 2. Explicitly define all common SYNTAX groups to be mcolor and NOT bold
 --hi('Comment', { fg = bmcomment, attr = 'underdotted' })
-hi('Comment', { fg = mcolor })
+hi('Comment', { fg = 160 })
+--hi('Comment', { fg = 196 })
 hi('Constant', { fg = mcolor, attr = 'NONE' })
 hi('Statement', { fg = mcolor, attr = 'NONE' })
 hi('Identifier', { fg = mcolor, attr = 'NONE' })

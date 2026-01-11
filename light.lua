@@ -18,11 +18,7 @@ vim.g.colors_name = 'terminal-green'
 
 -- day
 bmcolor = "223"
-mcolor = "black"
--- night
---bmcolor = "black"
---mcolor = "214"
--- Helper function to set highlights
+mcolor = "NONE"
 local function hi(group, opts)
   local cmd = 'highlight ' .. group
   if opts.fg then cmd = cmd .. ' ctermfg=' .. opts.fg end
@@ -53,7 +49,7 @@ hi('TabLineSel', { fg = mcolor, bg = bmcolor, attr = 'NONE' })
 
 -- 2. Explicitly define all common SYNTAX groups to be mcolor and NOT bold
 --hi('Comment', { fg = bmcomment, attr = 'underdotted' })
-hi('Comment', { fg = mcolor })
+hi('Comment', { fg = 88 })
 hi('Constant', { fg = mcolor, attr = 'NONE' })
 hi('Statement', { fg = mcolor, attr = 'NONE' })
 hi('Identifier', { fg = mcolor, attr = 'NONE' })
