@@ -31,9 +31,6 @@ function M.apply(colors)
   -- 4. CORE STYLES
   hi('Normal', { fg = m, bg = bm, attr = 'NONE' })
   hi('Visual', { fg = vis_fg, bg = vis_bg, attr = 'NONE' })
-  
-  vim.api.nvim_set_hl(0, 'TabKeyLetter', { underdashed = true, })
-  vim.api.nvim_set_hl(0, 'TabKeyLetter2', { underdashed = true, })
 
   hi('TabLine',     { fg = m, bg = bm, attr = 'underdashed' })
   hi('TabLineFill', { fg = m, bg = bm, attr = 'underdashed' })
